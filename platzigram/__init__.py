@@ -1,0 +1,1 @@
+#__init__.py: Declara platzigram como módulo de python
