@@ -20,16 +20,16 @@ Including another URLconf
 
 #from django.contrib import admin
 from django.urls import path
-#ds: para escribir una respuesta en Django:
-from django.http import HttpResponse
+from platzigram import views
 
 
 
 #ds: Todas las vistas reciben un "request"
-def hello_world(request):
-    return HttpResponse('Hello, world from DServo Labs')
+
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('hello-world', hello_world )
+    path('hello-world', views.hello_world),
+    path('sorted/', views.sort_integers),
+    path('hi/<str:name>/<int:age>/', views.say_hi),
 ]
