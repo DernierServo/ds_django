@@ -10,7 +10,7 @@ from users.models import Profile
 
 
 @admin.register(Profile)
-class ProfileAmin(admin.ModelAdmin):
+class ProfileAdmin(admin.ModelAdmin):
 	"""Profile admin."""
 	list_display = (
 		'pk', 
